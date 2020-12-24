@@ -1,4 +1,7 @@
-var chessBoard = function(size) {
+/**
+ * Chessboard component
+ */
+const chessBoard = function(size) {
     let hashval = '';
     let space = ' ';
 
