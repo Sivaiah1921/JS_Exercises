@@ -2,7 +2,7 @@
  * 
  * @param {Any} promises 
  */
-function Promise_all(promises) {
+const Promise_all = (promises) => {
     return new Promise((resolve, reject) => {
       // Your code here.
        let results = [],

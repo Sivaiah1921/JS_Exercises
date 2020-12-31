@@ -49,7 +49,7 @@ verify(/^\s[e]/,
     ["earth bed", "learning ape", "BEET"]);
 
 
-function verify(regexp, yes, no) {
+const verify = (regexp, yes, no) => {
 // Ignore unfinished exercises
 if (regexp.source == "...") return;
 for (let str of yes) if (!regexp.test(str)) {

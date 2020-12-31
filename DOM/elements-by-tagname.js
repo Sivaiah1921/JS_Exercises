@@ -3,11 +3,11 @@
   spans.</p> */}
 
 
-  function byTagName (node, tagName) {
+  const byTagName = (node, tagName) => {
     const total = [];
     tagName = tagName.toUpperCase();
 
-    function explore (node) {
+    const explore = (node) => {
       for (var i = 0; i < node.childNodes.length; i++) {
         let child = node.childNodes[i];        
         if (child.nodeType === Node.ELEMENT_NODE){

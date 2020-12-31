@@ -13,7 +13,7 @@
  * @param {number} end 
  * @param {number} diff 
  */
-function range(start, end, diff) {
+const range = (start, end, diff) => {
     let arr = [];
   	let range = diff === undefined ? 1 : diff;
   	if ( end > start) {
@@ -29,7 +29,7 @@ function range(start, end, diff) {
     return arr;
 }
 
-function sum(arr) {
+const sum = (arr) => {
     let total = 0;
     for (let i of arr) {
         total += i;

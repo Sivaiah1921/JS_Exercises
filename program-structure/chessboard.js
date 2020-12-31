@@ -1,7 +1,7 @@
 /**
  * Chessboard component
  */
-const chessBoard = function(size) {
+const chessBoard = (size) =>{
     let hashval = '';
     let space = ' ';
 
@@ -18,4 +18,5 @@ const chessBoard = function(size) {
         }
     }
     console.log(hashval);
-}(8);
+}
+chessBoard(8)

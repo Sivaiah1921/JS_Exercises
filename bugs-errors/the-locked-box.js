@@ -15,7 +15,7 @@ const box = {
     }
   };
   
-  function withBoxUnlocked(body) {
+  const withBoxUnlocked = (body) => {
     // Your code here.
     box.unlock();
     try {
@@ -26,12 +26,12 @@ const box = {
     }
   }
   
-  withBoxUnlocked(function() {
+  withBoxUnlocked(() => {
     box.content.push("gold piece");
   });
   
   try {
-    withBoxUnlocked(function() {
+    withBoxUnlocked(() => {
       throw new Error("Pirates on the horizon! Abort!");
     });
   } catch (e) {

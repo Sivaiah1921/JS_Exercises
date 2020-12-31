@@ -2,7 +2,7 @@
  * 
  * @param {Any} nest 
  */
-async function locateScalpel(nest) {
+async const locateScalpel = (nest) => {
     // Your code here.
     let next, current = nest.name;
       for (;;){
@@ -14,7 +14,7 @@ async function locateScalpel(nest) {
       }
   }
   
-  function locateScalpel2(nest) {
+  const locateScalpel2 = (nest) => {
     // Your code here.
     let current = nest.name;
     function loop(current) {

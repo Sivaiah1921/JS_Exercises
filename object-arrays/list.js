@@ -3,7 +3,7 @@ Write a function arrayToList that builds up a list structure like the one shown 
  * 
  * @param {Array} arr 
  */
-function arrayToList(arr) {
+const arrayToList = (arr) => {
     let list = null;
     for (i=arr.length-1; i>=0; i--) {
         list = {value: arr[i], rest: list }
@@ -11,21 +11,21 @@ function arrayToList(arr) {
     return list;
 }
 
-function listToArray(list) {
-    var array = [];
+const listToArray = (list) => {
+    const array = [];
 
-    for( var node = list; node; node = node.rest )
+    for( let node = list; node; node = node.rest )
       array.push( node.value );
   
     return array;
   }
 
 
-  function prepend( value, rest ) {
+  const prepend = ( value, rest ) => {
     return {value: value, rest: rest};
   }
   
-  function nth( list, n ) {
+  const nth = ( list, n ) => {
     if( n === 0 )
       return list.value;
     else

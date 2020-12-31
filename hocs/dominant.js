@@ -9,7 +9,7 @@
  * @param {Array} items 
  * @param {Any} groupName 
  */
-function countBy(items, groupName) {
+const countBy = (items, groupName) => {
     let counts = [];
     for (let item of items) {
       let name = groupName(item);
@@ -23,7 +23,7 @@ function countBy(items, groupName) {
     return counts;
   }
 
-  function characterScript(code) {
+  const characterScript = (code) => {
     for (let script of SCRIPTS) {
       if (script.ranges.some(([from, to]) => {
         return code >= from && code < to;
@@ -36,8 +36,7 @@ function countBy(items, groupName) {
 
 
 
-function dominantDirection(text) {
-    // Your code here.
+const dominantDirection = (text) => {
      let scripts = countBy(text, char => {
       let script = characterScript(char.codePointAt(0));
       return script ? script.direction : "none";

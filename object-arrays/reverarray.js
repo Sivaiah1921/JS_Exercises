@@ -5,7 +5,7 @@
  * 
  * @param {Array} arr 
  */
-function reverseArray(arr) {
+const reverseArray = (arr) => {
     let reverseArr = [];
   for (let i=arr.length; i >= 1; i--) {
       reverseArr.push(arr[i-1]);
@@ -13,7 +13,7 @@ function reverseArray(arr) {
  return reverseArr;
 }
 
-function reverseArrayInPlace(arr) {
+const reverseArrayInPlace = (arr) => {
     return arr.reverse();
 }
 

@@ -3,7 +3,7 @@
  * @param {Number} a 
  * @param {Number} b 
  */
-function min(a, b) {
+const min = (a, b) => {
     if (a < b) {
         return a;
     }

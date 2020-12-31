@@ -14,8 +14,8 @@
   ];
 
   
-  function createTable() {
-    var c, r, t;
+  const createTable = () => {
+    let c, r, t;
     t = document.createElement('table');
     //thead
     	const keys = Object.keys(MOUNTAINS[0]);

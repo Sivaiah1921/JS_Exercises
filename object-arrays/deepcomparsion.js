@@ -5,7 +5,7 @@
  * @param {Any} a 
  * @param {Any} b 
  */
-function deepEqual(a, b) {
+const deepEqual = (a, b) => {
     if (a === b) {
         return true;
     } 
